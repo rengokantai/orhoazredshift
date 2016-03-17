@@ -28,7 +28,7 @@ aws s3 cb . s3://yd-redshift/data --recursive
 ```
 select distinct(tablename) from pg_table_def where schemaname = 'public';
 ```
-######loading into redshift cluster
+######loading into redshift cluster p2
 ```
 set wlm_query_slot_count to 2;
 ```
@@ -73,3 +73,10 @@ acceptinvchars as '^'
 manifest;
 ```
 
+######loading into redshift cluster p3
+```
+select query,step,rows,workmem,label,is_diskbased
+from svl_query_summary
+where query=100
+order by workmem desc;
+```
