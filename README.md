@@ -80,3 +80,9 @@ from svl_query_summary
 where query=100
 order by workmem desc;
 ```
+#####3
+###### data loading bp part2 
+stored statically in the STL_LOAD_ERRORS table  
+also check STL_LOAD_COMMITS table.  
+Redshift does not support upsert.
+Redshift does not support primary key constriant
