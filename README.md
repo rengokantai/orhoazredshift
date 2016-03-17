@@ -66,7 +66,7 @@ SQL to retrive data from manifest file:
 copy customer
 from 's3://yd-redshift/data/customer-fw-manifest'
 region 'us-east-1'
-credentials 'aws_access_key_id=AKIAIXVX2XIKPDGJJSMQ;aws_secret_access_key=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'
+credentials 'aws_access_key_id=AK;aws_secret_access_key=HY'
 fixedwidth 'c_custkey:10, c_name:25, c_address:25, c_city:10, c_nation:15, c_region :12, c_phone:15,c_mktsegment:10'
 maxerror 10
 acceptinvchars as '^'
